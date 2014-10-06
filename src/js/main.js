@@ -191,10 +191,13 @@ $(function () {
       },
       tpl_eval: function (tpl, map) {
         try {
-          if(selectedIndex === map.id) tpl = selectedTpl;
-          return tpl.replace(/\$\{([^\}]*)\}/g, function(tag, key, pos) {
-            return map[key];
-          });
+          if(selectedIndex === map.id) {
+            tpl = selectedTpl;
+          }
+          var tmpHTML = $(tpl);
+          tmpHTML.attr('data-value', map.name);
+          tmpHTML.find('a').html(map.name);
+          return $("<p>").append(tmpHTML).html(); //jQuery object to html string
         } catch (error) {
           return '';
         }
@@ -259,6 +262,7 @@ $(function () {
     var view, _ref;
     view = (_ref = this.controller()) != null ? _ref.view : void 0;
     if (!(view && view.visible())) {
+      runningEvent = 0; // when writing english or using system IM, keep event to 0.
       return;
     }
     switch (e.keyCode) {
