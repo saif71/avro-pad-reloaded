@@ -19,7 +19,7 @@ Yes, we know [Google Input Tools](http://www.google.com/inputtools/try/) is ther
 * It's values privacy. Whatever you write or save in the drafts don't leave your browser unless you want them to.
 * It's open source. Google [deprecated their transliteration API service on May 26, 2011](https://developers.google.com/transliterate/), and it [may not be available after 3 years](https://developers.google.com/transliterate/terms) since the announcement. As a developer you are free to integrate AvroPad in your application under the terms of MPL 1.1. We hate vendor locking as much as you do.
 
-##Development
+## Development
 
 Install [Node.js](http://nodejs.org/) if you haven't already.
 
@@ -42,7 +42,7 @@ Open [http://localhost:8080/](http://localhost:8080/) in your browser.
 
 [Chrome Livereload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) extension will also come in handy if you don't want to refresh your browser manually every time you change the code.
 
-##Build
+## Build
 
 ```bash
 $ gulp build
@@ -56,7 +56,7 @@ $ gulp
 
 This `$ gulp` command alone will do the above and also start a server with the production ready application. Open [http://localhost:8888/](http://localhost:8888/) in your browser to test.
 
-##Browser support
+## Browser support
 
 AvroPad has been tested with Chrome, Firefox, Safari, iOS Safari. We don't know what will happen on IE, let us know in our [forum](http://forum.omicronlab.com) or in [issues](https://github.com/torifat/avro-pad/issues) if you test that, but right now we don't promise IE support.
 
@@ -68,13 +68,13 @@ Android support is very minimal, because of the bugs in Chrome for Android:
 
 And it's rare to have fixes on older Android releases, so old native Android browser probably will never be supported.
 
-##Contributors
+## Contributors
 
 * Sarim Khan
 * Rifat Nabi
 * Mehdi Hasan
 * Tanbin Islam Siyam
 
-##License
+## License
 
 AvroPad is licensed under Mozilla Public License 1.1 ("MPL"), an open source/free software license.
