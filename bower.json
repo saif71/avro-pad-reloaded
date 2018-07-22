@@ -12,6 +12,6 @@
     "jquery-autosize": "~1.18.7",
     "jquery.atwho": "~0.4.10",
     "jquery-touchswipe": "~1.6.6",
-    "device.js": "matthewhudson/device.js"
+    "device.js": "matthewhudson/device.js#0.2.7"
   }
 }
