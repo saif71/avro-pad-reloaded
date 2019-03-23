@@ -12,9 +12,9 @@ function changeCSS(cssFile, cssLinkIndex) {
 
 function switchMode() {
     if(document.getElementById("myCheckbox").checked === true){
-    changeCSS('/css/main_dark.css', 0);
+    changeCSS('/css/main_dark.css', 1);
 
     } else {
-    changeCSS('/css/main.css', 0);
+    changeCSS('/css/main.css', 1);
     }
   }

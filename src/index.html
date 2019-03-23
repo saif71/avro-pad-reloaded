@@ -32,18 +32,17 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="/css/main_dark.css" type="text/css" media="screen">
-	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
 	<title>avro.im | Write Bangla Instantly</title>
 	<!-- build:css css/app.css -->
 	<link rel="stylesheet" href="vendor/jquery.atwho/dist/css/jquery.atwho.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/css/main_dark.css" type="text/css" media="screen">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 	<link rel="stylesheet" href="/css/misc.css">
 	<!-- endbuild -->
 	
 </head>
 <body>
-
-
 	<div id="loader" style="display:none">
 		<div class="container">
 			<div class="anim-container">
@@ -64,7 +63,6 @@
 	<div id="wrapper" class="cf">
 		<main>
 			<div class="content">
-
 				<textarea disabled="true" placeholder="Write Here"
 				spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>
 			</div>
@@ -82,18 +80,22 @@
 						<input type="checkbox" id="state" checked="">
 						<label for="state" data-on="BN" data-off="EN"></label>
 					</span>
+
 					<br>
-					<span class="switch mode_switch">
-							<input type="checkbox" id="myCheckbox" onchange="switchMode()" checked="" >
-							<label for="myCheckbox" data-on="Dark" data-off="Light"></label>
-							
-						</span>
-						<div class="mode_lebel">Change Mode</div>
+											<span class="switch mode_switch">
+													<input type="checkbox" id="myCheckbox" onchange="switchMode()" checked="" >
+													<label for="myCheckbox" data-on="Dark" data-off="Light"></label>
+												
+												</span>
+												<div class="mode_lebel">Change Mode</div>
+						
+
+
 
 
 				</div>
 				<div class="drafts">
-					<h2>Drafts</h2>
+					<h2>Saved Drafts</h2>
 					<ul>
 						<li><a href="#">Draft 1</a></li>
 						<li><a href="#">Draft 2</a></li>
@@ -127,7 +129,6 @@
 	<script src="js/avro.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/misc.js"></script>
-
 	<!-- endbuild -->
 </body>
 </html>
