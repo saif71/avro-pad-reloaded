@@ -28,5 +28,10 @@
     "gulp-useref": "^3.1.2",
     "opn": "^4.0.2",
     "serve-static": "^1.11.1"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.0.0",
+    "gulp-html-minifier2": "^1.1.11",
+    "gulp-javascript-obfuscator": "^1.1.5"
   }
 }
