@@ -36,7 +36,7 @@
 	<title>avro.im | Write Bangla Instantly</title>
 	<!-- build:css css/app.css -->
 	<link rel="stylesheet" href="vendor/jquery.atwho/dist/css/jquery.atwho.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="/css/main_dark.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen">
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 	<link rel="stylesheet" href="/css/misc.css">
 	<!-- endbuild -->
@@ -83,7 +83,7 @@
 
 					<br>
 											<span class="switch mode_switch">
-													<input type="checkbox" id="myCheckbox" onchange="switchMode()" checked="" >
+													<input type="checkbox" id="myCheckbox" onchange="switchMode()" >
 													<label for="myCheckbox" data-on="Dark" data-off="Light"></label>
 												
 												</span>
@@ -97,6 +97,7 @@
 				<div class="drafts">
 					<h2>Saved Drafts</h2>
 					<ul>
+						<div id="modePref">loading</div>
 						<li><a href="#">Draft 1</a></li>
 						<li><a href="#">Draft 2</a></li>
 						<li><a href="#">Draft 3</a></li>
