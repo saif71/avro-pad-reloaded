@@ -12,32 +12,30 @@ function changeCSS(cssFile, cssLinkIndex) {
 
 function switchMode() {
 
-    if(document.getElementById("myCheckbox").checked === true){
-    changeCSS('/css/main.css', 1);
+    if (document.getElementById("myCheckbox").checked === true) {
+        changeCSS('/css/main_dark.css', 1);
+        localStorage.setItem("modePrefLS", "dark");
 
     } else {
-    changeCSS('/css/main_dark.css', 1);
-    }
-    save();
-  }
-
-  function save(){
-    var checkbox = document.getElementById('myCheckbox');
-    localStorage.setItem('myCheckbox', checkbox.checked);
-    //alert('saved '+localStorage.getItem('myCheckbox'));
-    document.getElementById('modePref').innerHTML = localStorage.getItem('myCheckbox');
-
-  }
-  function loadModePref(){    
-    var checked = JSON.parse(localStorage.getItem('myCheckbox'));
-    document.getElementById("myCheckbox").checked = checked;
-    if(localStorage.getItem('myCheckbox')===true){
-        
         changeCSS('/css/main.css', 1);
+        localStorage.setItem("modePrefLS", "light");
     }
-    else{
-       
+
+}
+function loadModePref() {
+
+    console.log(localStorage.getItem("modePrefLS"));
+    var modeLoad = localStorage.getItem("modePrefLS");
+
+    if (modeLoad === "light" || modeLoad === null) {
+
+        changeCSS('/css/main.css', 1);
+        document.getElementById("myCheckbox").checked = false;
+    }
+    else {
+
         changeCSS('/css/main_dark.css', 1);
+        document.getElementById("myCheckbox").checked = true;
     }
 }
 
