@@ -5,13 +5,13 @@ index.html
 css/main.css
 css/main_dark.css
 css/misc.css
+css/default.css
 images/apple-touch-icon.png
 images/logo-secondary.png
 images/tile-large.png
 images/tile-square.png
 images/tile-tiny.png
 images/tile-wide.png
-js/avro.min.js
 js/main.js
 js/misc.js
 

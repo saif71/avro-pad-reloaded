@@ -13,11 +13,11 @@ function changeCSS(cssFile, cssLinkIndex) {
 function switchMode() {
 
     if (document.getElementById("myCheckbox").checked === true) {
-        changeCSS('/css/main_dark.css', 1);
+        changeCSS('/css/main_dark.css', 2);
         localStorage.setItem("modePrefLS", "dark");
 
     } else {
-        changeCSS('/css/main.css', 1);
+        changeCSS('/css/main.css', 2);
         localStorage.setItem("modePrefLS", "light");
     }
 
@@ -29,12 +29,12 @@ function loadModePref() {
 
     if (modeLoad === "light" || modeLoad === null) {
 
-        changeCSS('/css/main.css', 1);
+        changeCSS('/css/main.css', 2);
         document.getElementById("myCheckbox").checked = false;
     }
     else {
 
-        changeCSS('/css/main_dark.css', 1);
+        changeCSS('/css/main_dark.css', 2);
         document.getElementById("myCheckbox").checked = true;
     }
 }
