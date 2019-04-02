@@ -1,0 +1,26 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+css/main.css
+css/main_dark.css
+css/misc.css
+images/apple-touch-icon.png
+images/logo-secondary.png
+images/tile-large.png
+images/tile-square.png
+images/tile-tiny.png
+images/tile-wide.png
+js/avro.min.js
+js/main.js
+js/misc.js
+
+NETWORK:
+http://*
+https://*
+*
+
+SETTINGS:
+prefer-online
+
+# hash: 3bccbe3c92e4630bc1dbf66d9988acc37fdf20bbbdf052d2190002f9f99c67e2
